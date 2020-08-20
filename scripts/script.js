@@ -111,6 +111,9 @@ inquirer
 
     // console.log(dependencies);
     // console.log(devDependencies);
+ spawnSync(‘npm’ , dependencies, {stdio: ‘inherit});
+ spawnSync(‘npm’ , devDependencies, {stdio: ‘inherit});
+
     exec(dependencies, (err, stdout, stderr) => {
       if (err) {
         //some err occurred

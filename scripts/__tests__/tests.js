@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
-import webpack from './webpack.js';
-import script from './script.js';
+const script = require('./script.js');
+const webpack = require('webpack.js');
 
 describe('Webpackjs', () => {
     it('should prompt the user with questions', () => {
